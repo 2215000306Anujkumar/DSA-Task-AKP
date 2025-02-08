@@ -4,7 +4,6 @@ class Solution {
         int b = Math.max(y1,(Math.min(yCenter , y2)));
         int w = xCenter - a;
         int y = yCenter - b;
-        System.out.print(w+" "+y);
         return ((w*w + y*y) <= radius*radius);
     }
 }
