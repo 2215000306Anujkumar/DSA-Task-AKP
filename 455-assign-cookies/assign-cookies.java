@@ -3,13 +3,14 @@ class Solution {
         Arrays.sort(g);
         Arrays.sort(s);
 
-        int child = 0 , cookie = 0;
-        while(child < g.length && cookie < s.length){
-            if(s[cookie] >= g[child]){
-                child++;
+        int ch = 0;
+        int co = 0;
+        while(ch < g.length && co < s.length){
+            if( s[co] >= g[ch]){
+                ch++;
             }
-            cookie++;
+            co++;
         }
-        return child;
+        return ch;
     }
 }
